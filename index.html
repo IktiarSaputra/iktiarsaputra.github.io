@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/b8d1f961b1.js" crossorigin="anonymous"></script>
+
+    <!-- Font-mfizz -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css"
+        integrity="sha512-Cdvnk1SFWqcb3An6gMyqDRH40Js8qmsWcSK10I2gSifCe2LilaPMsHd6DldEvQ3uIlCb1qdRUrNeAFFleOu4xQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
+        integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        .button-more{
+            display: flex;
+            justify-content: center;
+            flex: 0 0 100%;
+        }
+        a.showMore {
+            display: flex;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 20px;
+            background-color: #88E0EF;
+            border-radius: 50px;
+            padding: 1em 2em;
+            color: black;
+            text-decoration: none;
+        }
+
+        a.showMore::after {
+            content: "+ VIEW MORE";
+        }
+
+        a.showMore.showLess::after {
+            content: "- VIEW LESS";
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Start Preloader -->
+    <div id="preloader">
+        <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+            <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20"
+                stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round" />
+            <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20"
+                stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round" />
+            <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20"
+                stroke-dasharray="0 440" stroke-linecap="round" />
+            <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20"
+                stroke-dasharray="0 440" stroke-linecap="round" />
+        </svg>
+    </div>
+    <!-- End Preloaader -->
+
+    <!-- Start Navigation -->
+    <nav>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#skills" class="nav-link"><i class="fa-solid fa-screwdriver-wrench"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="#portfolio" class="nav-link"><i class="fa-solid fa-diagram-project"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- Start Home -->
+    <section class="section-home" id="home">
+        <div class="home-container">
+            <div class="home-img-banner">
+                <img src="/image/Avatar-Maker.png" alt="">
+            </div>
+            <div class="home-content">
+                <h1 class="home-title-name">Muhammad Ikctiar Saputra</h1>
+                <h3 class="home-title-profession">
+                    I'm <span class="typed"></span>
+                </h3>
+                <div class="home-divider"></div>
+                <ul class="home-social-media">
+                    <li class="home-social-item">
+                        <a href="#"> <i class="fa-brands fa-github" aria-hidden="true"></i> </a>
+                    </li>
+                    <li class="home-social-item">
+                        <a href="#"> <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> </a>
+                    </li>
+                    <li class="home-social-item">
+                        <a href="#"> <i class="fa-brands fa-instagram" aria-hidden="true"></i> </a>
+                    </li>
+                    <li class="home-social-item">
+                        <a href="#"> <i class="fa-regular fa-envelope" aria-hidden="true"></i> </a>
+                    </li>
+                </ul>
+                <h4 class="home-scroll-text">Scrool Down</h4>
+                <a href="#about" class="home-scroll-down"></a>
+            </div>
+        </div>
+    </section>
+    <!-- End Home -->
+
+    <!-- Start About -->
+    <section class="section-about" id="about">
+        <div class="about-container">
+            <div class="section-title">
+                <h2 class="about-section-title" data-heading="get to know">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="card-row">
+                    <div class="card-about">
+                        <div class="card-about-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="card-about-title">
+                            Experience
+                        </div>
+                        <div class="card-about-text">
+                            <span class="count">1</span>+ Years Working
+                        </div>
+                    </div>
+                    <div class="card-about">
+                        <div class="card-about-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="card-about-title">
+                            Clients
+                        </div>
+                        <div class="card-about-text">
+                            <span class="count">5</span>+ WorldWide
+                        </div>
+                    </div>
+                    <div class="card-about">
+                        <div class="card-about-icon">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <div class="card-about-title">
+                            Projects
+                        </div>
+                        <div class="card-about-text">
+                            <span class="count">12</span>+ Completed
+                        </div>
+                    </div>
+                </div>
+                <p class="about-description">
+                    My name is Muhammad Ikctiar Saputra, 18 years old. I live in Jakarta, Indonesia. I am a student at
+                    SMKN 1 JAKARTA majoring in Software Engineering. I will graduate soon and am ready to enter the
+                    world of work as a Backend Developer and ready to give my best work as much as possible.
+                </p>
+                <div class="about-button">
+                    <a class="btn btn--svg js-animated-button mt-3" href="#project"><span
+                            class="btn--svg__label">Download
+                            CV</span>
+                        <svg class="btn--svg__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60"
+                            enable-background="new 0 0 60 60">
+                            <circle class="js-discover-circle" fill="#88E0EF" cx="30" cy="30" r="30"></circle>
+                        </svg>
+                        <svg class="btn--svg__border" x="0px" y="0px" preserveaspectratio="none"
+                            viewBox="2 29.3 56.9 13.4" enable-background="new 2 29.3 56.9 13.4" width="190">
+                            <g class="btn--svg__border--left js-discover-left-border" id="Calque_2">
+                                <path fill="none" stroke="#88E0EF" stroke-width="1" stroke-miterlimit="1"
+                                    d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
+                            </g>
+                            <g class="btn--svg__border--right js-discover-right-border" id="Calque_3">
+                                <path fill="none" stroke="#88E0EF" stroke-width="1" stroke-miterlimit="1"
+                                    d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->
+
+    <section class="experience" id="experience">
+        <div class="section-title">
+            <h2 class="about-section-title" data-heading="Experience">My Experience</h2>
+        </div>
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="content">
+                        <h3>First Hope Winner at the Indonesian Vocational School Creative Camp in the Smart School
+                            field</h3>
+                        <p>me and my team managed to get the first prize in the 2021 Indonesian Vocational High School
+                            Creative Camp in the Smart School field </p>
+                    </div>
+                    <div class="time">
+                        <h4>01 January 2021</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>internship in assessment and learning center | Ministry of Education and Culture</h3>
+                        <p>I had an internship at the Center for Assessment and Learning, Ministry of Education. I am in
+                            charge of digitizing questions.</p>
+                    </div>
+                    <div class="time">
+                        <h4>Sept - Marc 2021</h4>
+                    </div>
+                </li>
+                <div style="clear:both;"></div>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Start Skills -->
+    <section class="section-skills" id="skills">
+        <div class="skills-container">
+            <div class="section-title">
+                <h2 class="about-section-title" data-heading="what skills i have">My Expertise</h2>
+            </div>
+            <div class="skills-content">
+                <div class="row-skills">
+                    <div class="card-skill">
+                        <h2 class="card-skill-title">
+                            Frontend Developer
+                        </h2>
+                        <div class="card-skill-content">
+                            <div class="card-skill-content-6">
+                                <div class="icon">
+                                    <i class="fa-brands fa-html5"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </div>
+                            <div class="card-skill-content-6">
+                                <div class="icon">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>CSS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-skill-content">
+                            <div class="card-skill-content-6">
+                                <div class="icon">
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>JS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </div>
+                            <div class="card-skill-content-6">
+                                <div class="icon">
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Bootstrap</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-skill-content">
+                            <div class="card-skill-content-6">
+                                <div class="icon">
+                                    <img src="https://img.icons8.com/ios-filled/38/ffffff/jquery.png" />
+                                </div>
+                                <div class="text">
+                                    <h3>jQuery</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </div>
+                            <div class="card-skill-content-6">
+                                <div class="icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Java</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-skill">
+                        <h2 class="card-skill-title">
+                            Backend Developer
+                        </h2>
+                        <div class="card-skill-content">
+                            <div class="card-skill-content-6">
+                                <div class="icon">
+                                    <i class="fa-brands fa-php"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>PHP</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </div>
+                            <div class="card-skill-content-6">
+                                <div class="icon">
+                                    <i class="fa-brands fa-laravel"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Laravel</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-skill-content">
+                            <div class="card-skill-content-6">
+                                <div class="icon">
+                                    <i class="icon-mysql-alt"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>MySQLi</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </div>
+                            <div class="card-skill-content-6">
+                                <div class="icon">
+                                    <i class="fa-solid fa-fire-flame-curved"></i>
+                                </div>
+                                <div class="text">
+                                    <h3>Codeigniter</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-skill-content">
+                            <div class="card-skill-content-6">
+                                <div class="icon">
+                                    <img src="https://img.icons8.com/ios/50/ffffff/postgreesql.png" />
+                                </div>
+                                <div class="text">
+                                    <h3>PostgreSQL</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Skills -->
+
+    <!-- Start Portfolio -->
+    <section class="section-portfolio" id="portfolio">
+        <div class="portfolio-container">
+            <div class="section-title">
+                <h2 class="about-section-title" data-heading="my recent work">Portfolio</h2>
+            </div>
+            <div class="card-row">
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img class="profile" width="100%" src="/image/goprakerin.jpg" alt="GoPrakerin">
+                        </div>
+                        <div class="back from-bottom">
+                            <h2>GoPrakerin</h2>
+                            <br>
+                            <p class="des">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus
+                                reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
+                            </p>
+                            <ul class="social-icon">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img class="profile" width="100%" src="/image/webkelulusan.png" alt="GoPrakerin">
+                        </div>
+                        <div class="back from-bottom">
+                            <h2>Web Pengumuman Kelulusan</h2>
+                            <br>
+                            <p class="des">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus
+                                reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
+                            </p>
+                            <ul class="social-icon">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img class="profile" width="100%" src="/image/webforum.png" alt="GoPrakerin">
+                        </div>
+                        <div class="back from-bottom">
+                            <h2>Forum Alumni SMAN 48 Jakarta</h2>
+                            <br>
+                            <p class="des">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus
+                                reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
+                            </p>
+                            <ul class="social-icon">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Custom JS -->
+    <script>
+        $(window).on('load', function () {
+            // Preloader
+            $('#preloader').delay(2000).fadeOut('slow', function () {
+                $(this).hide();
+            });
+
+            // Typed JS
+            var typed = new Typed('.typed', {
+                strings: ['Web Developer &#38; Backend Developer'],
+                smartBackspace: true, // Default value
+                typeSpeed: 50,
+                backSpeed: 50,
+                backDelay: 500,
+                startDelay: 3000,
+                loop: true,
+            });
+
+            // Count Number
+            $('.count').each(function () {
+                $(this).delay(2000).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 3000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        });
+
+        // Navigation
+        $('a[href^="#"]').click(function (event) {
+            var id = $(this).attr("href");
+            var target = $(id).offset().top;
+            $('html, body').animate({
+                scrollTop: target
+            }, 500);
+            event.preventDefault();
+        });
+
+        function getTargetTop(elem) {
+            var id = elem.attr("href");
+            var offset = 60;
+            return $(id).offset().top - offset;
+        }
+
+
+        $(window).scroll(function (e) {
+            isSelected($(window).scrollTop())
+        });
+
+        var sections = $('a[href^="#"]');
+
+        function isSelected(scrolledTo) {
+
+            var threshold = 100;
+            var i;
+
+            for (i = 0; i < sections.length; i++) {
+                var section = $(sections[i]);
+                var target = getTargetTop(section);
+
+                if (scrolledTo > target - threshold && scrolledTo < target + threshold) {
+                    sections.removeClass("active");
+                    section.addClass("active");
+                }
+
+            };
+        }
+
+        // Scroll Down
+        // $('a').click(function (e) {
+        //     e.preventDefault();
+        //     $id = $(this).attr('href');
+        //     $('body,html').animate({
+        //         scrollTop: $($id).offset().top
+        //     }, 500);
+        // });
+
+        VanillaTilt.init(document.querySelectorAll(".card-about"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.7
+        });
+
+        VanillaTilt.init(document.querySelectorAll(".card-skill"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.7
+        });
+
+        VanillaTilt.init(document.querySelectorAll(".card-portfolio"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.7
+        });
+
+        $('.card-row').slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 3,
+            slidesToScroll: 1
+        });
+    </script>
+
+    <script>
+        jQuery(document).ready(function () {
+
+            var $this = $('.card-row');
+            if ($this.find('div').length > 2) {
+                $('.card-row').append('<div class="button-more"><a href="javascript:;" class="showMore"></a></div>');
+            }
+
+            // If more than 2 Education card-row, hide the remaining
+            $('.card-row .card').slice(0, 2).addClass('shown');
+            $('.card-row .card').not('.shown').hide();
+            $('.card-row .showMore').on('click', function () {
+                $('.card-row .card').not('.shown').toggle(300);
+                $(this).toggleClass('showLess');
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

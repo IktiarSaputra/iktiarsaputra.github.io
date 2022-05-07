@@ -1,0 +1,140 @@
+@media (min-width: 320px) and (max-width: 480px) {
+
+    html, body{
+        overflow-x: hidden !important;
+    }
+    
+    /* Navbar */
+    .navbar {
+        padding: 10px;
+        position: relative;
+        width: 100%;
+    }
+
+    /* Nav Item */
+    .nav-item {
+        padding-left: 4px;
+    }
+
+    /* Jumbotron Banner */
+    .jumbotron {
+        padding: 10px 10px;
+        max-height: 60vh;
+    }
+
+    /* Image-row */
+    .col-md-5 {
+        visibility: hidden;
+    }
+
+    /* Description */
+    .description {
+        margin-top: 160px;
+    }
+
+    /* Text Display-4 */
+
+    .display-4 {
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+
+    /* Text Lead */
+
+    .lead {
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
+    /* Text Desc */
+
+    .desc {
+        font-size: 1.2em;
+    }
+
+    /* Button More */
+
+    .btn-more {
+        padding: 0.5rem 1rem;
+        font-size: .8em;
+    }
+
+    /* Button Rounded */
+
+    .btn-round {
+        border: none;
+        font-size: 1em;
+        margin-left: 0px;
+    }
+
+    /* Custom Waves */
+
+    .custom-shape-divider-bottom-1637166932 svg {
+        height: 100px;
+    }
+
+    /* Expertise */
+
+    .expertise {
+        padding: 10px;
+        height: 100%;
+    }
+
+    /* Img Expertise */
+
+    .img-css {
+        margin-top: 3px;
+    }
+
+    .img-js {
+        margin-top: 1px;
+    }
+
+    .img-bootstrap {
+        margin-top: 1px;
+    }
+
+    .img-jquery {
+        margin-top: 1px;
+    }
+
+    /* Back End Row */
+
+    .back-end {
+        padding: 20px 50px;
+    }
+
+    /* Portfolio */
+
+    .portfolio{
+        padding: 10px;
+    }
+
+    /* Nav Pills */
+
+    .nav-pills{
+        padding: 10px;
+        margin-left: 0px;
+    }
+
+    .card-row {
+        padding: 20px;
+    }
+
+    .col-card{
+        flex: 0 0 50%;
+        width: 0 0 50%;
+    }
+
+    .custom-shape-divider-top-1637241453 svg {
+        height: 100px;
+    }
+
+    .btn-footer{
+        border: 2px solid #fff;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+}

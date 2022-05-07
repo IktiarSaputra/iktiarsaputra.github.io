@@ -1,0 +1,123 @@
+@media only screen and (min-width: 320px) and (max-width: 380px) {
+    .home-title-name {
+        font-size: 1.5em;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .card-skill {
+        padding: 0px;
+    }
+
+    .card-skill-title {
+        font-size: 1em;
+        margin-top: -50px;
+    }
+
+    .card-skill-content .icon {
+        margin-right: 0px;
+    }
+
+    .card-skill-content .icon i {
+        font-size: 1.2em;
+    }
+
+    .card-skill-content .text h3 {
+        font-size: .5em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: .5em;
+    }
+
+    .section-home {
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+    }
+
+    .home-img-banner img {
+        width: 150px;
+    }
+
+    .home-title-name {
+        font-size: 2em;
+    }
+
+    .home-title-profession {
+        font-size: 1em;
+    }
+
+    .home-divider {
+        width: 60%;
+    }
+
+    .home-social-media .home-social-item a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home-scroll-down {
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .section-about {
+        height: 100%;
+    }
+
+    .card-about {
+        flex-basis: 100%;
+    }
+
+    .about-description {
+        margin: .5em 1.5em;
+        text-align: justify;
+    }
+
+    .experience {
+        height: 100%;
+        margin-top: 50px;
+    }
+
+    .timeline ul li p {
+        font-size: .8em;
+    }
+
+    .section-skills {
+        height: 100%;
+        margin-top: 50px;
+    }
+
+    .row-skills {
+        padding: .5em;
+    }
+
+    .card-skill {
+        flex-basis: 100%;
+        padding: .5em;
+    }
+
+    .card-skill-title {
+        font-size: 1.5em;
+        margin-top: -50px;
+    }
+
+    .card-skill-content .icon {
+        margin-right: 0px;
+    }
+
+    .card-skill-content .icon i {
+        font-size: 2em;
+    }
+
+    .card-skill-content .text h3 {
+        font-size: 1em;
+    }
+
+    .card{
+        flex-basis: 100%;
+    }
+}
